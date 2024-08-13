@@ -3,7 +3,7 @@ namespace App\Controllers;
 Use App\Models\usuario_model; 
 Use CodeIgniter\Controller; 
 
-class login_controller extends Controller 
+class login_controller extends BaseController 
 { 
 
 	public function index()
@@ -19,8 +19,8 @@ class login_controller extends Controller
 
     public function auth()
     {
-    	$session=session();
-    	$model= new usuario_model();
+    	$session = session();
+    	$model = new usuario_model();
 
     	//traemos los datos del formulario
     	$email=$this->request->getVar('email');
@@ -32,11 +32,11 @@ class login_controller extends Controller
     		$ba = $data['baja'];
     		if ($ba == 'SI') {
     			$session->setFlashdata('msg', 'usuario dado de baja');
-    			return redirect()->to('/login_controller');
+    			return redirect()->to('/login');
     		}
 
 			//se verifican los datos ingresados para iniciar, si cumple la verificación inicia la sesión
-    		$verify_pass =password_verify($password, $pass);
+    		$verify_pass = password_verify($password, $pass);
     		//password_verify determina los requisitos de configuración de la contraseña
     		if ($verify_pass) {
     			$ses_data = [
@@ -56,12 +56,12 @@ class login_controller extends Controller
     		}
     		else {
     			$session->setFlashdata('msg', 'Contraseña incorrecta');
-    			return redirect()->to('/login_controller');
+    			return redirect()->to('/login');
     		}
     	}
     		else {
     			$session->setFlashdata('msg', 'No existe el email o es incorrecto');
-    			return redirect()->to('/login_controller');
+    			return redirect()->to('/login');
     		}
     }
 

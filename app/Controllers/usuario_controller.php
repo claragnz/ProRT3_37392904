@@ -51,7 +51,7 @@ class usuario_controller extends Controller {
 
             //Flashdata: funciona solo  en redirigir la funcion del controlador en la vista de carga. Para mostrar mensajes de error o éxito. Redirige a otra página 
             session()->setFlashdata('success', 'Usuario registrado con éxito');
-            return $this->response->redirect('/login');
+            return $this->response->redirect('login');
 
         }
     }

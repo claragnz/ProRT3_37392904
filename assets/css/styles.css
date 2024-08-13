@@ -1,6 +1,6 @@
 header {
-  background-color: #b3c20d;
-  color: #fff;
+  background-color: #dfd247;
+  color: #030504;
   text-align: center;
   padding: 20px;
 }
@@ -9,22 +9,11 @@ section {
   text-align: justify;
 }
 footer {
-  background-color: #b3c20d; /* Color de fondo del footer */
-  color: #fff;
+  background-color: #dfd247; /* Color de fondo del footer */
   padding: 20px 0;
-
-/* Anular estilo general para footer dentro de blockquote */
-.blockquote-footer {
-    background: transparent;
-}
-   
-.footer-content {
-  max-width: 800px; /* Ancho máximo del contenido del footer */
   margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
   text-align: center;
-  color: whitesmoke;
-
-}
+  color: black;
 
 /* Estilo para los iconos de redes sociales */
 .social-icons {

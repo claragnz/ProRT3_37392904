@@ -1,15 +1,29 @@
 <!-- quote -->
-<div class="card border-dark mb-3" style="max-width: 100%;">
+<div class="mx-auto p-2" style="max-width: 50%;">
+<div class="card border-dark mb-3 text-center">
   <div class="card-header">
     Revalorizando nuestros ecosistemas nativos
   </div>
   <div class="card-body">
     <blockquote class="blockquote mb-0">
       <p>Para el que mira sin ver, la tierra es tierra nomás.</p>
-      <footer class="blockquote-footer"><cite title="Source Title">Atahualpa Yupanqui</cite></footer>
+      <figcaption class="blockquote-footer"><cite title="Source Title">Atahualpa Yupanqui</cite>
+  </figcaption>
     </blockquote>
   </div>
 </div>
+</div>
+
+
+<!-- <figure class="text-end">
+  <blockquote class="blockquote">
+    <p>A well-known quote, contained in a blockquote element.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </figcaption>
+</figure> -->
+
 
 <!---carrusel--->
 <div id="carouselExample" class="carousel slide">

@@ -6,8 +6,8 @@
 
       <title><?php echo($titulo);?></title>
 
-        <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet" >
-        <link href="<?php echo base_url('assets/css/styles.css"');?>" rel="stylesheet" >
+        <link href="<?= base_url('assets/css/bootstrap.min.css?v='.time()); ?>" rel="stylesheet">
+        <link href="<?= base_url('assets/css/styles.css?v='.time()); ?>" rel="stylesheet">
 
   </head>
   <body>
