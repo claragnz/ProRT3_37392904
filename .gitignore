@@ -1,0 +1,8 @@
+# Ignorar directorios de depuración
+/writable/debugbar/
+
+# Ignorar logs
+/writable/logs/
+
+# Ignorar sesiones de usuario
+/writable/session/
